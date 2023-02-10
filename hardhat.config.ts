@@ -122,6 +122,9 @@ const config: HardhatUserConfig = {
     },
   },
   networks: {
+    localhost: {
+      url: "http://localhost:" + process.env.LOCALHOST_PORT || "8545",
+    },
     hardhat: {
       blockGasLimit: 30_000_000,
       throwOnCallFailures: false,

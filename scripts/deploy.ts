@@ -7,7 +7,12 @@ import { faucet } from "../test/utils/faucet";
 // To deploy to localhost network:
 // 1. Start local hardhat node
 //    `npx hardhat node`
+//   or
+//    `npx hardhat node --port <port>`
 // 2. Open a new terminal and deploy the smart contract in the localhost network
+//    `npx hardhat run --network localhost scripts/deploy.ts`
+//   or
+//    `export LOCALHOST_PORT=<port>` // set local hardhat node port
 //    `npx hardhat run --network localhost scripts/deploy.ts`
 
 async function main() {
